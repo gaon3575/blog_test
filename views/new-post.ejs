@@ -1,0 +1,12 @@
+<% layout('layout') %>
+<h1>New Post</h1>
+
+<form action="/posts" method="POST">
+    <label for="title">Title</label>
+    <input type="text" name="title" id="title" required>
+
+    <label for="content">Content</label>
+    <textarea name="content" id="content" rows="10" required></textarea>
+
+    <button type="submit">Create Post</button>
+</form>
